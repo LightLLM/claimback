@@ -26,6 +26,14 @@ python -m uvicorn claimback.api:app --host 127.0.0.1 --port 8765
 
 Open **http://127.0.0.1:8765**. No AWS account, API key, frontend build or external font is needed for the default demo. Internet is needed once to install dependencies. `start.ps1` is a Windows convenience launcher.
 
+### Public Vercel demo
+
+The repository includes a Vercel ASGI entrypoint that serves the browser UI and API from one FastAPI function. Its synthetic SQLite state uses Vercel's temporary `/tmp` storage, so a case may reset between serverless instances. No real merchant messages or money movements occur.
+
+```bash
+vercel --prod
+```
+
 ## A two-minute walkthrough
 
 1. On Northstar Travel, choose **Review & start**, read the authorization scope, then **Authorize & start simulation**.
