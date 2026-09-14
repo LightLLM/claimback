@@ -1,0 +1,21 @@
+[
+  {
+    "id": "refund-1408", "kind": "refund", "merchant": "Northstar Travel", "title": "The trip that never happened", "subtitle": "Cancelled booking · NS-2048", "amount_cents": 140800, "offer_cents": 88000, "currency": "USD",
+    "description": "Northstar cancelled your booking. Its synthetic policy provides a full refund, but the first response offers only $880.",
+    "evidence": [
+      {"id": "receipt-ns", "name": "Booking receipt", "type": "Receipt", "source": "demo://northstar/receipt-2048", "text": "SYNTHETIC RECEIPT. Booking NS-2048. Paid USD 1,408.00 on 2026-08-20. Trip date 2026-09-18. No refund recorded."},
+      {"id": "cancel-ns", "name": "Cancellation confirmation", "type": "Email", "source": "demo://northstar/cancellation", "text": "SYNTHETIC EMAIL dated 2026-09-12. Northstar Travel cancelled booking NS-2048 because the tour will not operate. The traveller did not cancel."},
+      {"id": "policy-ns", "name": "Cancellation policy · section 4", "type": "Policy", "source": "demo://northstar/policy-v1", "text": "SYNTHETIC POLICY. Section 4: if Northstar cancels a tour, the full amount paid is refundable to the original payment method. No service fee is retained."}
+    ]
+  },
+  {
+    "id": "warranty-349", "kind": "warranty", "merchant": "Forma Home", "title": "A warranty worth following through", "subtitle": "Air purifier · FM-7781", "amount_cents": 34900, "offer_cents": 0, "currency": "USD",
+    "description": "Your air purifier stopped working within its one-year warranty. ClaimBack assembles the claim and follows up until a replacement is confirmed.",
+    "purchase_date": "2026-02-11", "issue_date": "2026-09-10", "warranty_days": 365,
+    "evidence": [
+      {"id": "receipt-fm", "name": "Proof of purchase", "type": "Receipt", "source": "demo://forma/receipt-7781", "text": "SYNTHETIC RECEIPT. Forma Air purifier purchased 2026-02-11 for USD 349.00. Serial FM-7781."},
+      {"id": "issue-fm", "name": "Fault and troubleshooting log", "type": "Issue log", "source": "demo://forma/fault-log", "text": "SYNTHETIC OWNER LOG dated 2026-09-10. Device no longer powers on. Tested a working outlet, replaced the filter and performed the manual reset. No impact or water damage reported. This log is a statement, not independently verified."},
+      {"id": "policy-fm", "name": "One-year limited warranty", "type": "Policy", "source": "demo://forma/warranty-v1", "text": "SYNTHETIC POLICY. Manufacturing defects reported within 365 days of purchase qualify for review. Receipt, serial number and troubleshooting log required. Approved claims receive a replacement at no cost; cash recovery is not promised."}
+    ]
+  }
+]

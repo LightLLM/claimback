@@ -1,0 +1,12 @@
+# Build with docker buildx build --platform linux/arm64.
+FROM python:3.11-slim
+WORKDIR /app
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt && useradd --create-home appuser
+COPY --chown=appuser:appuser claimback ./claimback
+COPY --chown=appuser:appuser data ./data
+COPY --chown=appuser:appuser agentcore_entry.py .
+USER appuser
+ENV PYTHONUNBUFFERED=1
+EXPOSE 8080
+CMD ["python", "agentcore_entry.py"]

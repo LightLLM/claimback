@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#143e36"><title>ClaimBack — Get back to your life.</title><link rel="icon" href="/static/icon.svg" type="image/svg+xml"><link rel="stylesheet" href="/static/styles.css"><script defer src="/static/app.js"></script></head>
+<body>
+<aside class="sidebar">
+  <a class="brand" href="/" aria-label="ClaimBack home"><span class="brand-icon">↶</span> ClaimBack<span class="brand-dot">.</span></a>
+  <div class="workspace"><span class="avatar">JD</span><div>Jordan’s workspace<small>Personal recovery agent</small></div></div>
+  <nav aria-label="Main navigation"><button class="nav-item active" data-view="overview"><span>◫</span> Overview <b>2</b></button><button class="nav-item" data-view="decisions"><span>◇</span> Decisions <b id="decision-count">0</b></button><button class="nav-item" data-view="evidence"><span>▤</span> Evidence vault</button><button class="nav-item" data-view="activity"><span>↗</span> Agent activity</button></nav>
+  <div class="side-note"><div class="orbit">✳</div><h3>Your money.<br>Your decisions.</h3><p>I handle the paperwork.<br>You keep the final say.</p><span class="mini-pill">Human control, built in</span></div>
+  <div class="side-bottom"><span class="online-dot"></span> Strands Agents SDK <small>ClaimBack · v0.1</small></div>
+</aside>
+<main>
+  <header><div class="breadcrumb">Your workspace <span>/</span> <strong id="page-name">Overview</strong></div><div class="header-actions"><span class="demo-badge" id="mode">● Synthetic demo</span><button class="text-button" id="reset">Reset demo ↻</button></div></header>
+  <div class="page">
+    <section class="hero"><div><div class="eyebrow">A LITTLE LESS LIFE ADMIN</div><h1>Get back to your life.<br><span>We’ll chase the money.</span></h1><p>Refunds, warranties, and the follow-ups you never had time for.<br>Your agent takes it from here. You make the decisions that matter.</p></div><div class="hero-stamp" aria-hidden="true"><span>LESS CHASING</span><b>↶</b><span>MORE LIVING</span></div></section>
+    <div class="stats" id="stats"></div>
+    <section class="section-heading"><div><h2 id="section-title">Your recovery desk</h2><p id="section-caption">Two loose ends. One agent on your side.</p></div><span class="quiet-label">● All amounts in USD</span></section>
+    <div id="content" aria-live="polite"></div>
+    <section class="how"><span class="eyebrow">HOW CLAIMBACK WORKS</span><div><p><b>01</b><strong>Connect the dots</strong><span>Receipts, policies, and proof.<br>Every claim starts with evidence.</span></p><i>→</i><p><b>02</b><strong>Do the legwork</strong><span>Build the claim, submit, follow up.<br>Routine work stays with your agent.</span></p><i>→</i><p><b>03</b><strong>Keep you in control</strong><span>A partial offer or a compromise?<br>You decide what happens next.</span></p></div></section>
+    <footer><span>Built for the things you’re owed.</span><span id="simulation-note">Synthetic data · Simulated merchants · No real money moves</span></footer>
+  </div>
+</main>
+<dialog id="detail"><div id="detail-body"></div><button class="secondary" id="close-detail">Close</button></dialog>
+<div id="toast" role="status"></div>
+</body></html>
