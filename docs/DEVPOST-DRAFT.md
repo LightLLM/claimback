@@ -21,7 +21,7 @@ The core uses the Python Strands Agents SDK with six tools: gather evidence, ass
 
 The default scripted model provider runs the real Strands tool loop without credentials, making the demo reproducible. A configurable Amazon Bedrock model uses the same tools for model-driven orchestration. Bedrock inference remains optional and was not used in the deployed synthetic demonstration.
 
-A small FastAPI service persists browser-scoped state in SQLite with optimistic concurrency. The responsive web UI uses no frontend build chain. The standalone synthetic Strands agent is deployed on Amazon Bedrock AgentCore Runtime in `us-east-1` and returned HTTP 200 in a verified cloud invocation. The browser UI remains local; durable cloud state and live merchant integrations are future work.
+A small FastAPI service persists browser-scoped synthetic state in SQLite with optimistic concurrency. The responsive web UI uses no frontend build chain and is publicly deployed on Vercel. The standalone synthetic Strands agent is deployed separately on Amazon Bedrock AgentCore Runtime in `us-east-1` and returned HTTP 200 in a verified cloud invocation. Durable shared cloud state and live merchant integrations are future work.
 
 ## Challenges
 The hardest design question was authority: routine recovery work should proceed, but an agent must not convert a merchant offer into a user's consent. We solved that with a separate human decision endpoint, current decision IDs and explicit acknowledgement for partial settlement. We also separate claimed value, confirmed simulated cash, and non-cash replacement value so the dashboard never inflates its results.
@@ -47,7 +47,7 @@ Clone the public repository, install `requirements.txt`, and run `python -m uvic
 - AWS Builder ID: **[ENTRANT TO PROVIDE — AWS account 134553439892 is recorded separately as deployment evidence]**
 - Submitter type: **Individual**
 - Country of residence: **Canada**
-- Optional live demo URL: **[ADD ONLY IF DEPLOYED]**
+- Optional live demo URL: **https://claimback-psi.vercel.app — verified production deployment**
 - AgentCore deployment: **Verified READY runtime; see docs/AWS-DEPLOYED.md**
 - Track: **Everyday Agents**
 - Team and pre-existing work disclosure: **[REVIEW FOR ACCURACY]**

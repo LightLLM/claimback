@@ -43,7 +43,7 @@ flowchart LR
   DDB -. decision notification .-> WEB
 ```
 
-The supplied `agentcore_entry.py` runs as a standalone synthetic invocation on Amazon Bedrock AgentCore in `us-east-1`. The runtime reached `READY`, and a signed invocation returned HTTP 200 while preserving the human-decision pause. It starts a fresh fixture, requires `authorize_simulation=true`, runs Strands and returns state and evidence. It exposes no settlement action. The browser currently uses the local API; wiring it to an authenticated AgentCore backend and implementing durable cloud state are next integration steps.
+The supplied `agentcore_entry.py` runs as a standalone synthetic invocation on Amazon Bedrock AgentCore in `us-east-1`. The runtime reached `READY`, and a signed invocation returned HTTP 200 while preserving the human-decision pause. It starts a fresh fixture, requires `authorize_simulation=true`, runs Strands and returns state and evidence. It exposes no settlement action. The public Vercel browser demo uses its scripted FastAPI backend; wiring it to the authenticated AgentCore runtime and implementing durable cloud state are next integration steps.
 
 ## Extending beyond the two fixtures
 

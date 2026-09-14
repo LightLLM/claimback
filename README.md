@@ -1,6 +1,8 @@
 # ClaimBack
 
-**Deployment update (September 14, 2026):** The standalone synthetic agent is now deployed and cloud-tested on AgentCore. See [verified deployment and Free plan status](docs/AWS-DEPLOYED.md). This supersedes earlier not-deployed statements below; the web UI remains local and Bedrock inference remains unverified.
+**Live demo:** https://claimback-psi.vercel.app
+
+**Deployment update (September 14, 2026):** The public synthetic web demo is deployed on Vercel, and the standalone synthetic agent is deployed and cloud-tested separately on AgentCore. See [verified deployment and Free plan status](docs/AWS-DEPLOYED.md). Bedrock model inference remains unverified.
 
 **Get back to your life. We’ll chase the money.**
 
@@ -28,7 +30,7 @@ Open **http://127.0.0.1:8765**. No AWS account, API key, frontend build or exter
 
 ### Public Vercel demo
 
-The repository includes a Vercel ASGI entrypoint that serves the browser UI and API from one FastAPI function. Its synthetic SQLite state uses Vercel's temporary `/tmp` storage, so a case may reset between serverless instances. No real merchant messages or money movements occur.
+Open **https://claimback-psi.vercel.app**. The Vercel ASGI entrypoint serves the browser UI and scripted demo API from one FastAPI function. Its synthetic SQLite state uses Vercel's temporary `/tmp` storage, so a case may reset between serverless instances. The Vercel demo does not invoke the separate IAM-authenticated AgentCore runtime. No real merchant messages or money movements occur.
 
 ```bash
 vercel --prod

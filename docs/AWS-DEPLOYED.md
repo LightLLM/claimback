@@ -21,7 +21,7 @@ No paid inference, NAT gateway, load balancer, public website, container build s
 
 ## Scope
 
-The browser UI remains local. The deployed endpoint starts a fresh synthetic case per invocation and returns the trace; durable multi-step cloud state and UI integration are not implemented.
+The browser UI is publicly deployed at https://claimback-psi.vercel.app with its scripted synthetic FastAPI backend. The separate AgentCore endpoint starts a fresh synthetic case per invocation and returns the trace; durable multi-step cloud state and integration between the Vercel UI and AgentCore are not implemented.
 
 ## Re-run
 
