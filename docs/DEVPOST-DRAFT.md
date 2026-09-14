@@ -43,8 +43,10 @@ Clone the public repository, install `requirements.txt`, and run `python -m uvic
 
 ## Fields the entrant must complete
 - Public repository URL: **https://github.com/LightLLM/claimback**
-- Public YouTube/Vimeo video: **[ADD AFTER RECORDING — AT MOST 5 MINUTES]**
-- AWS Builder ID: **[ENTRANT TO PROVIDE]**
+- Public YouTube/Vimeo video: **IN PROGRESS — add the public YouTube URL after recording (at most five minutes)**
+- AWS Builder ID: **[ENTRANT TO PROVIDE — AWS account 134553439892 is recorded separately as deployment evidence]**
+- Submitter type: **Individual**
+- Country of residence: **Canada**
 - Optional live demo URL: **[ADD ONLY IF DEPLOYED]**
 - AgentCore deployment: **Verified READY runtime; see docs/AWS-DEPLOYED.md**
 - Track: **Everyday Agents**
